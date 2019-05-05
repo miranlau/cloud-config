@@ -3,13 +3,13 @@ spring:
     config:
       server:
         git:
-          uri: 'https://github.com/bslota/config-repository'
+          uri: 'https://github.com/miranlau/cloud-config/tree/master/config-store'
           clone-on-start: true
-          search-paths: 'config/{application}'
-    stream:
-      kafka:
-        binder:
-          brokers: "localhost:9092"
+          search-paths: '{application}'
+#    stream:
+#      kafka:
+#        binder:
+#          brokers: "localhost:9092"
 
 eureka:
   client:

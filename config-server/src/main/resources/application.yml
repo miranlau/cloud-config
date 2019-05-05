@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: 'https://github.com/miranlau/cloud-config/tree/master/config-store'
+          uri: 'https://github.com/miranlau/config-repo'
           clone-on-start: true
           search-paths: '{application}'
 #    stream:

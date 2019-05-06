@@ -12,6 +12,8 @@
         <module>config-server</module>
         <module>discovery-server</module>
         <module>product-manager</module>
+        <module>customer-manager</module>
+        <module>gateway</module>
     </modules>
 
 

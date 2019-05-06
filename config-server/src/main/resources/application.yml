@@ -6,10 +6,13 @@ spring:
           uri: 'https://github.com/miranlau/config-repo'
           clone-on-start: true
           search-paths: '{application}'
-#    stream:
-#      kafka:
-#        binder:
-#          brokers: "localhost:9092"
+    stream:
+      kafka:
+        binder:
+          brokers: "10.80.17.64:9092"
+    bus:
+      refresh:
+        enabled: true
 
 eureka:
   client:
@@ -25,3 +28,9 @@ eureka:
 # Server properties
 server:
   port: 8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'   #refresh

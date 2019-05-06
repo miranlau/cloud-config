@@ -1,0 +1,29 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: "10.80.17.64:9092"
+
+server:
+  port: 8085
+
+eureka:
+  client:
+    enabled: true
+    registryFetchIntervalSeconds: 10 # how often to fetch the registry from Eureka server
+    instanceInfoReplicationIntervalSeconds: 10 # how often to replicate instance changes to be replicated to Eureka server
+  instance:
+    leaseRenewalIntervalInSeconds: 10 # intervalSeconds between subsequent heartbeats sent to Eureka server
+    leaseExpirationDurationInSeconds: 20 # time that Eureka server waits since it received last heartbeat before it can evict this instance
+
+premium-email-suffix: gmail.com
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["health", "info", "refresh"]

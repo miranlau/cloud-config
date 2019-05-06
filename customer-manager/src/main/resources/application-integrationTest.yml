@@ -1,0 +1,14 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  cloud:
+    bus:
+      enabled: false
+
+server:
+  port: 8085
+
+eureka:
+  client:
+    enabled: false

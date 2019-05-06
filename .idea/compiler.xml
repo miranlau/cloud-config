@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="product-manager" />
         <module name="config-server" />
+        <module name="customer-manager" />
+        <module name="gateway" />
         <module name="discovery-server" />
       </profile>
     </annotationProcessing>
@@ -15,7 +17,9 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-server" options="-parameters" />
+      <module name="customer-manager" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="product-manager" options="-parameters" />
     </option>
   </component>
